@@ -17,7 +17,7 @@ TESTS = {
         {
             "input": ['muchlonger'],
             "answer": True,
-        }
+        },
         {
             "input": ['ashort'],
             "answer": False,
