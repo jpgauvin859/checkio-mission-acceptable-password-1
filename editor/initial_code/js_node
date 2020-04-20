@@ -1,20 +1,17 @@
-"use strict";
+import assert from "assert";
 
-function isAcceptablePassword(a) {
+function isAcceptablePassword(password: string): boolean {
     // your code here
-    return undefined;
+    return false;
 }
 
-var assert = require('assert');
+console.log('Example:');
+console.log(isAcceptablePassword('short'));
 
-if (!global.is_checking) {
-    console.log('Example:');
-    console.log(isAcceptablePassword('short'));
+// These "asserts" are used for self-checking
+assert.equal(isAcceptablePassword('short'), false);
+assert.equal(isAcceptablePassword('muchlonger'), true);
+assert.equal(isAcceptablePassword('ashort'), false);
 
-    // These "asserts" are used for self-checking
-    assert.equal(isAcceptablePassword('short'), false);
-    assert.equal(isAcceptablePassword('muchlonger'), true);
-
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
