@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p>
+    <i>Vous êtes au début d'une série de mots de passe. Chaque mission est basée sur la précédente. Les missions qui suivront deviendront un peu plus complexes.</i>
+</p>
+
+<p> 
+    Dans cette mission, vous devez créer une fonction de vérification de mot de passe.
+</p>
+
+<p>La condition de vérification est:</p>
+
+<ul>
+    <li>La longueur doit être supérieure à 6 caractères.</li>
+</ul>
+
+
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Entrée: </strong> Une chaîne de caractères.
+</p>
+
+<p>
+    <strong>Sortie: </strong> Un booléen. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Exemple:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">isAcceptablePassword('short') == false
+isAcceptablePassword('muchlonger') == true
+isAcceptablePassword('ashort') == false
+</pre>
+{% else %}
+<pre class="brush: python">is_acceptable_password('short') == False
+is_acceptable_password('muchlonger') == True
+</pre>
+{% endif %}
+</div>
+
+
+<p class="for_info_only">
+    <strong>Comment le code est utilisé: </strong>
+    <i>Pour un formulaire de vérification de mot de passe. Il est également bon d’apprendre comment la tâche peut être évaluée.</i>
+</p>
